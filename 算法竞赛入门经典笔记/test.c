@@ -3,8 +3,9 @@
 
 int main(void)
 {
-    int a, b;
-    scanf("%d%d", &a, &b);
-    printf("%d %d", a, b);
+    short int a = -1;
+    while (a < 0)
+    a--;
+    printf("%d", a);
     return 0;
 }
