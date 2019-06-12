@@ -1,19 +1,15 @@
 #include<stdio.h>
 int main(void)
 {
-    int a, b;
-    int check = 2;//获取scanf返回值
-    int count = 0;//计算星期
-    int x = 0;//用于终止循环
-    while (2 == check && 0 == x)//获取小时，判断是否已经不高兴
-    {
-        count++;//星期递增
-        check = scanf("%d %d", &a, &b);
-        if(a + b >= 8){
-            printf("%d", count);
-            x++;//已经不高兴了
+    int a, b, max_hours = 0, unhappyday = 0;
+    for(int weekday = 1; weekday <= 7; ++weekday){
+        scanf("%d\n%d", &a, &b);
+        if(a + b > 8 && a + b > max_hours)
+        {
+            max_hours = a + b;
+            unhappyday = weekday;
         }
-        
     }
+    printf("%d", unhappyday);
     return 0;
 }
