@@ -1,10 +1,12 @@
 #include<stdio.h>
 int main(void)
 {
-    int a = 1, b = 1, c = 1;
-    for (; a <= 9;a++)
-    for (; b < +9;b++)
-    for (; c <= 9; c++)
-    printf("%d\n", a * 100 + b * 10 + c);
+	int a=123, b, c;
+    for(; a<=333; a++)
+    {
+	   b = a * 2;
+	  c = a * 3;
+	 if((a/100)) 
+
     return 0;
 }
