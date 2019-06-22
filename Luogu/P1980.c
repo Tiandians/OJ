@@ -6,11 +6,9 @@ int main(void)
     for (int count = 1; count <= n; count++)
     {
         if (count % 10 == x){
-            printf("yes1\n");
             p++;
         }
         if (count / 10 % 10 == x && count >= 10){
-            printf("yes2\n");
             p++;
         }
         if (count / 100 % 10 == x && count >= 100)
