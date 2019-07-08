@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <math.h>
-int gcd(int a, int b)
+long long f(long long x)
 {
-    if(a%b==0)
-        return b;
+    if(x==0)
+    return 1;
     else
-        return gcd(b, a % b);
+        return x * f(x - 1);
+
 }
 int main(void)
 {
-    int a, b;
-    scanf("%d%d", &a, &b);
-    printf("%d", gcd(a, b));
+    long long a;
+    scanf("%lld", &a);
+    printf("%lld", f(a));
     return 0;
 }
