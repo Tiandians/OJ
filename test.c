@@ -1,17 +1,23 @@
 #include <stdio.h>
-#include <math.h>
-long long f(long long x)
-{
-    if(x==0)
-    return 1;
-    else
-        return x * f(x - 1);
+#include <ctype.h>
 
-}
 int main(void)
 {
-    long long a;
-    scanf("%lld", &a);
-    printf("%lld", f(a));
-    return 0;
+    printf("Please enter an upper:");
+    char ch;
+    while(!isupper(ch = getchar()))
+        printf("Error!\nPlease enter again!\na");
+    for (char line = 'A'; line <= ch; line++)
+    {
+        for (char pause = line; pause < ch; pause++)
+            printf(" ");
+        for (char up = 'A'; up <= line; up ++)
+            printf("%c", up);
+        for (char down = line - 1; down >= 'A'; down--)
+            printf("%c", down);
+        printf("\n");
+
+    }
+
+        return 0;
 }
