@@ -1,28 +1,30 @@
-#include <stdio.h>
+#include <stdio.h>//最开始时使用7个if分支逐位比对，在输入为1000000 0时进入无限循环，最终都没有找到结果。后来尝试使用递归成功AC
+int count = 0;//全局变量
+void is_count(int k, int x);
+
 int main(void)
 {
-    int n, x, p = 0;
+    //freopen("testdata.in", "r", stdin);
+    //freopen("testdata.out", "w", stdout);
+
+    int n, x;
     scanf("%d %d", &n, &x);
-    for (int count = 1; count <= n; count++)
+    for (int i = 1; i <= n; i++)//枚举
     {
-        if (count % 10 == x){
-            p++;
-        }
-        if (count / 10 % 10 == x && count >= 10){
-            p++;
-        }
-        if (count / 100 % 10 == x && count >= 100)
-            p++;
-        if (count / 1000 % 10 == x && count >= 1000)
-            p++;
-        if (count / 10000 % 10 == x && count >= 10000)
-            p++;
-        if (count / 100000 % 10 == x && count >= 100000)
-            p++;
-        if (count / 1000000 == x && n >= 1000000)
-            p++;
-        printf("%d:%d\n", count, p);
+        is_count(i, x);
     }
-    printf("%d", p);
+    printf("%d", count);
     return 0;
+}
+
+void is_count(int k, int x)//递归方案：对于一位数：比对；对于非一位数：取个位，比对，丢弃最后一位，再次递归
+{
+    if (k < 10 && k == x)//比对
+        count++;
+    if (k >= 10)
+    {
+        is_count(k % 10, x);//取个位，比对
+        k /= 10;//丢弃最后一位
+        is_count(k, x);//再次递归
+    }
 }
