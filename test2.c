@@ -1,8 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-    char a = 'A';
-    char b = 'a';
-    printf("%d %d", a, b);
+    double i;
+    for (i = 0; i != 10;i+=0.1)
+        printf("%.lf\n", i);
     return 0;
-}
+
+} 
