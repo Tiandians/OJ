@@ -33,6 +33,7 @@
     ],
     "clang.completion.enable": true,
     "files.associations": {
-        "P1848.C": "cpp"
+        "P1848.C": "cpp",
+        "6.5.C": "cpp"
     } // 效果比cpptools要好
 }
