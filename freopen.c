@@ -1,26 +1,20 @@
-#include <string.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <string.h>
+
 
 int main(void)
 {
-    freopen("testdata.in", "r", stdin);
-    freopen("testdata.out", "w", stdout);
-    int kg = 0, hh = 0, cha = 0;
-    char cur;
-    while((cur = getchar())!='#')
+    int count = 0;
+    char pre=' ', cur;
+    while((cur= getchar())&&cur!='#')
     {
-        switch(cur)
+        if(pre =='e'&&cur=='i')
         {
-            case ' ':
-                kg++;
-                break;
-            case '\n':
-                hh++;
-                break;
-            default:
-                cha++;
+            count++;
         }
+        pre = cur;
     }
-    printf("\' \'is %d, \\n is %d and chars are %d\n", kg, hh, cha);
+    printf("%d", count);
     return 0;
 }

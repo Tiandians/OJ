@@ -1,18 +1,14 @@
-1.循环读取输入
-每次进行判断
-int cur=0;
-char curname[25];
-int curqimo, curbanji;
-char curganbu, curxibu;
-int curlunwen;
-
-if(curqimo>80&&curlunwen>=1)
-    cur+=8000;
-if(curqimo>85&&curbanji>85)
-    cur+=4000;
-if(curqimo>90)
-    cur+=2000;
-if(chrqimo>85&&curxibu=='Y')
-    cur++1000;
-if(curbanji>80&&curganbu=='Y')
-    cur++850;
+1.5 3 =8
+不高兴=0+8-8=0
+2.6 2 = 8
+0+8-8=0
+3.7 2= 9
+0+9-8=1
+4.5 3 = 8
+1+8-8=1
+5.5 4 = 9
+1+9-8=2
+6.0 4 = 4
+2+4-8=-2
+7.0 6 = 6
+-2+6-8=-4

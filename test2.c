@@ -1,24 +1,32 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-int jisuan(int qimo, int banji, char ganbu, char xibu, int lunwen)
+long num[21];
+
+bool susu(int x)
 {
-    int cur = 0;
-    if (qimo > 80 && lunwen >= 1)
-        cur += 8000;
-    if (qimo > 85 && banji > 80)
-        cur += 4000;
-    if (qimo > 90)
-        cur += 2000;
-    if (qimo > 85 && xibu == 'Y')
-        cur += 1000;
-    if (banji > 80 && ganbu == 'Y')
-        cur += 850;
-    return cur;
+    for (int i = 1; i * i <= x;i++)
+    {
+        if(x%i==0)
+            return false;
+    }
+    return true;
 }
+
+int cul(int n, int k)
+{
+    
+}
+
 int main(void)
 {
-    
-    
-    printf("%d", jisuan(87,82,'Y','N',0));
-    return 0;
+    int n, k;
+    scanf("%d%d", &n, &k);
+    for (int i = 0; i <= n - 1; i++)
+    {
+        scanf("%ld", &num[i]);
+    }
+
+        return 0;
 }
+
