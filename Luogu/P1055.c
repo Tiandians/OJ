@@ -3,8 +3,6 @@
 
 int main(void)
 {
-    freopen("testdata.in", "r", stdin);
-    freopen("testdata.out", "w", stdout);
     char isbn[14];//字符串
     int isbnum[9];//数组
     int sum = 0;//和
