@@ -84,3 +84,6 @@ int putchar(int char)
   * appends the string pointed to by src to the end of the string pointed to by dest.
   * 注：需要满足字符串长度
   
+## stdlib.h
+
+* int fabs(int n)
