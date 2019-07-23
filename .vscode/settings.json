@@ -35,6 +35,7 @@
     "files.associations": {
         "P1848.C": "cpp",
         "6.5.C": "cpp",
-        "7.5.C": "cpp"
+        "7.5.C": "cpp",
+        "P2669.C": "cpp"
     } // 效果比cpptools要好
 }
