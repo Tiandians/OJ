@@ -1,0 +1,25 @@
+#include <cstdio>
+#include <stack>
+
+using namespace std;
+stack<int> n;
+char ch;
+int s,x,y;
+int main(void)
+{
+    while(ch!='@')
+    {
+        ch=getchar();
+        switch(ch)
+        {
+            case '+':x=n.top();n.pop();y=n.top();n.pop();n.push(x+y);break;
+            case '-':x=n.top();n.pop();y=n.top();n.pop();n.push(y-x);break;
+            case '*':x=n.top();n.pop();y=n.top();n.pop();n.push(x*y);break;
+            case '/':x=n.top();n.pop();y=n.top();n.pop();n.push(y/x);break;
+            case '.':n.push(s);s=0;break;
+            default :s=s*10+ch-'0';break;//通过累乘左移逐字读取数字，巧妙
+        }
+    }
+    printf("%d\n",n.top());
+    return 0;
+}

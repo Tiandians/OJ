@@ -13,7 +13,7 @@ int main(void)
             count = 0;
             day++;
         }
-    }
+    }//其实不需要这样。连续N天中每天获得N个硬币所以每周期获得N*N个硬币
     printf("%d", sum);
     return 0;
 }

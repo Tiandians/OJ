@@ -9,7 +9,7 @@ int main(void)
         int nu;
         int flag = (scanf("%d", &nu)); //取数字
         //这个取数字环节出现了错误：scanf会读取+-号！这样+-操作就会被忽略，但同时scanf又会返回0，于是跳过了+-操作，甚至可能下一个损伤数字
-        if (flag)                      //读取成功
+        if (flag) //读取成功
         {
             num.push(nu); //入栈
             continue;
@@ -25,16 +25,18 @@ int main(void)
             {
                 switch (c)
                 {
-                case '+':{
+                case '+':
+                {
                     int a = num.top(); //栈顶出栈
                     num.pop();
                     int b = num.top(); //栈顶出栈
                     num.pop();
                     int c = a + b;
                     num.push(c); //相加入栈
-                    }
-                    break;
-                case '-':{
+                }
+                break;
+                case '-':
+                {
                     int d = num.top();
                     num.pop();
                     int e = num.top();
@@ -42,8 +44,9 @@ int main(void)
                     int f = e - d;
                     num.push(f);
                 }
-                    break;
-                case '*':{
+                break;
+                case '*':
+                {
                     int g = num.top();
                     num.pop();
                     int h = num.top();
@@ -51,8 +54,9 @@ int main(void)
                     int i = g * h;
                     num.push(i);
                 }
-                    break;
-                case '/':{
+                break;
+                case '/':
+                {
                     int j = num.top();
                     num.pop();
                     int k = num.top();
