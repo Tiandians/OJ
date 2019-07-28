@@ -1,4 +1,4 @@
-#include <ctype.h>
+#include <ctype.h>//还有一种思路：给四种元素分别计数，更简单一些
 #include <stdio.h>
 #define C 12.01
 #define H 1.008

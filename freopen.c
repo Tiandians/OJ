@@ -1,20 +1,13 @@
-#include <stdbool.h>
 #include <stdio.h>
+#include <math.h>
 #include <string.h>
-
+#include <ctype.h>
+#include <stdbool.h>
 
 int main(void)
-{
-    int count = 0;
-    char pre=' ', cur;
-    while((cur= getchar())&&cur!='#')
-    {
-        if(pre =='e'&&cur=='i')
-        {
-            count++;
-        }
-        pre = cur;
-    }
-    printf("%d", count);
+{   
+    freopen("testdata.in", "r", stdin);
+    freopen("testdata.out", "w", stdout);
+    
     return 0;
 }
