@@ -3,7 +3,7 @@
 
 using namespace std;
 stack<int> n;
-char ch;
+char ch;//全局变量会自动初始化为0
 int s,x,y;
 int main(void)
 {

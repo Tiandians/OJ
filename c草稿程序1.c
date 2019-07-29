@@ -12,7 +12,7 @@ int queue[MAXN], frt=0,end=0;
 
 void prin(void)
 {
-        for (int i = frt;i!=end;i=(i+1)%MAXN)
+        for (int i = frt;i!=(end%MAXN);i=(i+1)%MAXN)
                 printf("%d ", queue[i]);
         putchar('\n');
 }
