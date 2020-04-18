@@ -2,6 +2,25 @@
 
 参考书籍：《Ubuntu Linux》指南 基础篇
 
+## 第二章 安装规划
+
+### 磁盘分区
+
+`(swap)`:交换分区。应该是系统内存大小的两倍
+
+`/boot`:内核和系统启动时所需的其他数据
+
+`/var`:存放大量系统日志、软件包信息和记账数据，数据活动频繁
+
+`/home`:用户主目录
+
+`/`:
+
+`/usr`:存放软件包等
+
+### LVM:逻辑卷管理程序
+
+
 ## 第四章 Ubuntu Linux简介
 
 ### sudo
@@ -48,7 +67,7 @@ bash -c "df -h;read"
   
 * `less`：分页程序。按下 h 键显示一组 less 命令，q 则会让 less 停止。
 
-* `info`：显示实用工具的相关信息，是 GNU 项目开发的基于菜单的超文本系统。
+* `info`：显示实用工具的相关信息
   * h：查看有关 info 的交互手册
   * ?：列出 info 命令
   * SPACE：滚动浏览可用信息项菜单
@@ -56,26 +75,80 @@ bash -c "df -h;read"
   * q 或者 CONTROL-C：退出
   * 行左端的`*`号说明该条目是菜单项。
   * 每一个菜单项都是一个指向描述该项目的 info 页的链接
-* 在 `help.ubuntu.com` 上可以找到 [Ubuntu](help.ubuntu.con) 文档
-* 在 `www.gnu.org/manual` 上可以找到 [GUN手册](www.gnu.org/manual)
+* [Ubuntu文档](help.ubuntu.con) 
+* [GUN手册](www.gnu.org/manual)
 
-### 口令
+### Linux CLI
 
-  * 7 或 8 个字符是长度和安全两方面都比较好的折中
+* `CLI`：命令行（字符）界面
+  * ctrl-w:删除一个单词
+  * ctrl-z:挂起程序
+  * fg:继续执行
+  * ctrl-u:删除一行
+  * ctrl-x:???
+  * ctrl-c:终止执行
+  * ctrl-h:退格
 
-  * 不应该是任何语言的字典中的某个词汇
+## 第五章 Linux实用工具
 
-  * 不应该是人名、地名、宠物名字或其他东西的名称
+### 特殊字符：不要作为文件名
 
-  * 应该至少包含 2 个字母和 1 个数字或标点符号字符
+`& ; | * ? ' " `` [ ] ( ) $ < > { } # / \ ! ~`
 
-  * 不应该是你的用户名及其变形
+转义控制字符的唯一方法是在它们前面加ctrl-v
 
-  * 避免使用控制字符，这可能导致你无法登陆
+```$
+echo xxxxctrl-u
+echo xxxxctrl-v ctrl-u
+```
 
-  * 如果忘记口令，请以 root 特权身份的用户修改你的口令
+### 基本实用工具
 
-    ### Linux CLI
+* `cat`:显示文本文件内容
+* `rm`:删除文件
+* `less`or`more`:分屏显示文本文件
+* `hostname`:显示系统名
 
-    * CLI：命令行（字符）界面
-    * 
+### 文件操作
+
+* `cp`:复制文件
+将日期作为文件副本名字很有用
+* `mv`:更改文件名（会覆盖文件）
+* `lpr`:打印文件（可以多条） -lpq查看 -lprm停止
+* `lpstat -p`:打印机列表
+* `grep`:查找字符串
+* `head`:显示头部
+* `tail`:显示尾部
+* `sort`:排序显示
+* `uniq`:不显示连续重复行
+* `diff`:比较两个文件（带-u）
+* `file`:测试文件内容
+
+### |：实现进程间的通信
+
+* `wc -w`:显示指定文件中字数
+* `xxx | lpr`:可以发送到打印机
+
+### 其他实用工具
+
+* `echo`:复制其后跟的任何内容
+* `date`:显示时间和日期
+* `script`:记录shell会话 -a文件名
+* `unix2dos`:Linux文件转Windows/Macintosh 属于fotrodos软件包，sudo aptitude install tofrodos -dos2unix
+
+### 压缩和归档
+
+* `bzip2`:压缩文件
+* `ls -l`:显示详细信息
+* -v:显示节省空间
+* .bz2:扩展名
+* `bunzip2`:解压
+* `gzip`and`compress`:压缩
+* `tar`:归档
+  * -c创建
+  * -v包含详细信息
+  * -f从一个文件进行读写
+  * -t显示
+  * -x解包
+  
+
