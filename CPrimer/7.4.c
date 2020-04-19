@@ -20,6 +20,6 @@ int main(void)
         else
             putchar(cur);
     }
-    printf("\n%d", cur);
+    printf("\n%d", count);
     return 0;
 }
