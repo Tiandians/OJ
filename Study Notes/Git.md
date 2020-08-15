@@ -1,5 +1,25 @@
 # [Learn Git Branching](https://learngitbranching.js.org)
 
+## SSH
+
+git config --global user.name "username"
+
+git config --global user.email "email@email.com"
+
+ssh-keygen -t rsa -C "email@email.com"
+
+cat ~/.ssh/id_rsa.pub
+
+ssh -T git@github.com
+
+vim .git/config
+
+```
+url = git@github.com:username/project.git
+```
+
+
+
 ## 基础篇
 
 ### 提交
