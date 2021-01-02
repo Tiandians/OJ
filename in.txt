@@ -1,0 +1,100 @@
+                    <dt>13、离散之光-数列2</dt>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e660169594b2d55e12627d28_3" data-cindex="25">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1215第一节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：01:01:10
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e69b1550ec880e7b0f315f79_3" data-cindex="26">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1215第二节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：01:19:24
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+                    <dt>14、离散之光-数列3</dt>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e66aa6f3766c2a00c2b8fe11_3" data-cindex="27">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1222第一节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：01:06:35
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e6a6e9a6f5db69f3fbb53433_3" data-cindex="28">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1222第二节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：01:10:39
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+                    <dt>15、周期弦歌-三角1</dt>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e633a6308eb8d5837678ef35_3" data-cindex="29">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1229第一节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：00:59:33
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+                    <dd class="videoPreview   N" data-curriculumid="" data-vid="">
+                      <a href="javascript:;" id="vod_3f25ea56e6c26e196166a8210aefcd35_3" data-cindex="30">
+                        <div class="class-timevip-title">
+                          <span>2020线上李华光班1229第二节（李华光）</span>
+                          <span class="class-timevip-span class-timevip-span-content">
+                              时长：01:14:37
+                          </span>
+                        </div>
+                      </a>
+ 
+                      <div class="vip-course-curriculum-operation" data-trainstatus="NONE">
+
+
+
+                      </div>
+                    </dd>
+              </dl>
