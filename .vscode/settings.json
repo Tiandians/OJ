@@ -12,4 +12,5 @@
         //"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt < test.in > test.out", // 带重定向
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     },
+    "C_Cpp.errorSquiggles": "Disabled",
 }
