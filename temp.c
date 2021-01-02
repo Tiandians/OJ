@@ -1,7 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main(void)
 {
-    char temp = getchar();
-    printf("%d", temp);
+    int count[4] = {[3]=4};
+    ++count[3];
+    printf("%d", count[3]);
     return 0;
 }
